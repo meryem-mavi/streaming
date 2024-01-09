@@ -1,0 +1,284 @@
+html,body,h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    color: white;
+    width: 100%;
+    display: flex;
+    background: rgb(14,28,68);
+    background: linear-gradient(90deg, rgba(14,28,68,1) 0%, rgba(23,43,60,1) 100%);
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+   
+}
+.container .menu {
+    width: calc(100% - 60px);
+    height: 50px;
+    padding: 15px 30px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid gray;
+}
+.container .menu .left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.container .menu .left-side h1 {
+    color: #ccc;
+    font-size: 20px;
+   font-weight: lighter;
+   align-items: center;
+}
+.container .menu .left-side h1 i {
+    transform: rotate(30deg);
+    font-size: 30px;
+    color: rgb(41, 204, 245);
+}
+
+.container .menu .left-side ul li {
+    list-style: none;
+}
+.container .menu .left-side ul li  i {
+   color: rgb(41, 204, 245);
+   filter: drop-shadow(2px 3px 10px rgba(41, 204, 245, 1));
+   font-size: 12px;
+   margin-right: 5px;
+   justify-content: center;
+   align-items: center;
+   
+}
+.container .menu .left-side ul li a {
+    font-size: 18px;
+    color: #ccc;
+    text-decoration: none;
+}
+.container .menu .right-side ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 10px;
+}
+
+.container .menu .right-side ul li i {
+    font-size: 24px;
+    color: white;
+}
+.container .menu .right-side ul li img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.container .main {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: calc(100% - 40px);
+}
+.container .main .content  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: calc(100% - 400px);
+}
+.container .main .content .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding: 30px;
+    margin-top: -30px;
+    width: calc(100% - 60px);
+}
+.container .main .content .name h1 {
+    color: white;
+    justify-content: start;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.container .main .content .name .meet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px ;
+    background-color: rgb(19, 133, 226);
+    gap: 15px;
+    font-size: 18px;
+}
+.container .main .content .name .meet i {
+    background-color: rgb(19, 133, 226);
+    font-size: 30px;
+
+}
+.container .main .content .name .meet span {
+    background-color: rgb(5, 5, 5);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 30px;
+}
+.container .main .content .name .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    font-size: 20px;
+}
+.container .main .content .name .user i {
+    margin-right: 20px;
+}
+.container .main .content .name .user span {
+    background-color: rgb(19, 133, 226);
+    border-radius: 50%;
+    padding: 1px 10px;
+    margin-left: 10px;
+}
+.container .main .content .video iframe {
+    width: 800px;
+    height: 300px;
+}
+
+.container .main .content .photos {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+}
+.container .main .content .photos img {
+    display: flex;
+    width: auto;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+.container .main .right-side {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+ 
+}
+.container .main .right-side .profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.container .main .right-side .profiles img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.container .main .right-side .chat {
+    width: 400px;
+    padding: 10px;
+}
+.container .main .right-side .chat h1 {
+    font-size: 26px;
+    font-weight: lighter;
+}
+.container .main .right-side .chat .list {
+    margin-left: -40px;
+}
+.container .main .right-side .chat .list ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .main .right-side .chat .list ul li {
+    list-style: none;
+  
+}
+.container .main .right-side .chat .list ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 18px;
+    padding: 5px; 
+}
+.container .main .right-side .chat .chats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.container .main .right-side .chat .chats .messages {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+}
+.container .main .right-side .chat .chats .messages .profile img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    justify-content: start;
+    padding: 10px;
+}
+.container .main .right-side .chat .chats .messages .message {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 133, 226);
+    border-radius: 0 5px 5px 5px;
+    padding: 10px;
+}
+.container .main .right-side .chat .chats .messages .message span {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #ccc;
+}
+.container .main .right-side .chat .chats .right {
+    justify-content: end;
+    align-items: end;
+}
+.container .main .right-side .chat .typing {
+    padding: 10px;
+}
+.container .main .right-side .chat .write {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.container .main .right-side .chat .write input {
+    height: 20px;
+    width: 250px;
+    padding: 10px 3px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    margin-left: -20px;
+}
+.container .main .right-side .chat .write .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.container .main .right-side .chat .write .icon i {
+    padding: 10px;
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgb(4, 60, 105);
+    border: 1px solid #ccc;
+} 
